@@ -15,7 +15,7 @@ def proxy_config(HOST, PORT):#setup firefox browser to use the proxies
     profile.set_preference("network.proxy.ssl_port", PORT)
     profile.set_preference("dom.webnotifications.enabled", False)
     driver = webdriver.Firefox(firefox_profile=profile)
-    driver.get('https://www.facebook.com/')#open google anonymously 
+    driver.get('https://www.facebook.com/')#open facebook anonymously 
     time.sleep(60)
     print('closing driver')
     driver.close()
